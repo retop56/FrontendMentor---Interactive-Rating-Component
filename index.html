@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <script src="/js/script.js" defer></script>
     <link
       rel="icon"
       type="image/png"
@@ -33,38 +32,47 @@
     </style>
   </head>
   <body>
+    <!-- Rating state start -->
     <main>
-      <div class="star-image">
-        <img src="/images/icon-star.svg" alt="Orange star" />
+      <div class="rating-state">
+        <div class="star-image">
+          <img src="/images/icon-star.svg" alt="Orange star" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-buttons">
+          <input type="radio" id="r1" name="rating" value="1" />
+          <label class="rating-number" for="r1">1</label>
+          <input type="radio" id="r2" name="rating" value="2" />
+          <label class="rating-number" for="r2">2</label>
+          <input type="radio" id="r3" name="rating" value="3" />
+          <label class="rating-number" for="r3">3</label>
+          <input type="radio" id="r4" name="rating" value="4" />
+          <label class="rating-number" for="r4">4</label>
+          <input type="radio" id="r5" name="rating" value="5" />
+          <label class="rating-number" for="r5">5</label>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
       </div>
-      <!-- Rating state start -->
-      <h1>How did we do?</h1>
-
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-
-      <div class="rating-buttons">
-        <input type="radio" id="r1" name="rating" value="rating 1" />
-        <label class="rating-number" for="r1">1</label>
-        <input type="radio" id="r2" name="rating" value="rating 2" />
-        <label class="rating-number" for="r2">2</label>
-        <input type="radio" id="r3" name="rating" value="rating 3" />
-        <label class="rating-number" for="r3">3</label>
-        <input type="radio" id="r4" name="rating" value="rating 4" />
-        <label class="rating-number" for="r4">4</label>
-        <input type="radio" id="r5" name="rating" value="rating 5" />
-        <label class="rating-number" for="r5">5</label>
-      </div>
-
-      <button type="submit" class="submit-button">Submit</button>
       <!-- Rating state end -->
       <!-- Thank you state start -->
-      <!-- You selected -->
-      <!-- Add rating here -->
-      <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch! -->
+      <div class="thank-you-state hide">
+        <img
+          src="/images/illustration-thank-you.svg"
+          alt="Orange card alongside grey receipt coming out of printer"
+        />
+        <div class="rating-selection-wrapper">
+          <p class="rating-selection"></p>
+        </div>
+        <h1>Thank you!</h1>
+        <p class="thank-you-subtext">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
       <!-- Thank you state end -->
     </main>
 
