@@ -1,0 +1,15 @@
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-neutral-one: hsl(0, 0%, 100%);
+  --color-neutral-two: hsl(217, 12%, 63%);
+  --color-neutral-three: hsl(216, 12%, 54%);
+  --color-neutral-four: hsl(213, 19%, 18%);
+  --color-neutral-five: hsl(216, 12%, 8%);
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-size: 0.9375rem;
+}
