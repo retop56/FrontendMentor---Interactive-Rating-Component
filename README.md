@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Solution](https://github.com/retop56/FrontendMentor---Interactive-Rating-Component)
+- Live Site URL: [Live Site](https://retop56.github.io/FrontendMentor---Interactive-Rating-Component/)
 
 ## My process
 
