@@ -7,12 +7,12 @@
 }
 
 :root {
-  --color-primary: hsl(25, 97%, 53%);
-  --color-neutral-one: hsl(0, 0%, 100%);
-  --color-neutral-two: hsl(217, 12%, 63%);
-  --color-neutral-three: hsl(216, 12%, 54%);
-  --color-neutral-four: hsl(213, 19%, 18%);
-  --color-neutral-five: hsl(216, 12%, 8%);
+  --main-background: #141519;
+  --circle-background: #363f4d;
+  --light-text: #969da7;
+  --main-gradient-start: #222935;
+  --main-gradient-finish: #171e28;
+  --submit-button: #fb7715;
 
   --fw-reg: 400;
   --fw-bold: 700;
@@ -20,8 +20,9 @@
 
 body {
   font-size: 0.9375rem;
+  font-family: Overpass, sans-serif;
   height: 100vh;
-  background-color: var(--color-neutral-five);
+  background-color: var(--main-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,9 +30,92 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   height: 24em;
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 1em;
-  background-color: var(--color-neutral-four);
+  background-image: radial-gradient(
+    circle at top,
+    var(--main-gradient-start) 0%,
+    var(--main-gradient-finish) 100%
+  );
+  /* background-color: var(--color-neutral-four); */
+}
+
+.star-image {
+  display: flex;
+  height: 2em;
+  width: 2em;
+  background-color: var(--circle-background);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+img {
+  position: relative;
+  width: 1em;
+  height: auto;
+  object-fit: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: var(--fw-reg);
+  margin-bottom: 0.8rem;
+}
+
+p {
+  color: var(--light-text);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="radio"] + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  font-weight: var(--fw-bold);
+  color: var(--light-text);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--circle-background);
+}
+
+.rating-number:hover {
+  background-color: var(--submit-button);
+  color: white;
+}
+
+.submit-button {
+  border: none;
+  margin-top: 1.5rem;
+  height: 3rem;
+  background-color: var(--submit-button);
+  color: white;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  border-radius: 1.5625rem;
 }
