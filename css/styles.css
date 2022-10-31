@@ -34,6 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 24em;
+  max-height: 25.75rem;
+  max-width: 25.75rem;
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 1em;
@@ -124,6 +126,11 @@ input[type="radio"] + label {
   font-size: 0.75rem;
   letter-spacing: 3px;
   border-radius: 1.5625rem;
+}
+
+.submit-button:active {
+  background-color: white;
+  color: var(--submit-button);
 }
 
 .hide {
